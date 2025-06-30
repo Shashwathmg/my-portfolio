@@ -1,0 +1,54 @@
+🚀 PORTFOLIO TEMPLATE - QUICK SETUP GUIDE
+===========================================
+
+📦 STEP 1: SETUP
+- Extract the ZIP file and open the folder in VS Code
+- Run: npm install
+- Run: npm run dev
+- Open http://localhost:3000 in your browser
+
+🎯 STEP 2: CUSTOMIZE
+- Open: src/app/data/data.ts
+- Update ALL sections with your information:
+  ✅ Personal Information (name, title, description)
+  ✅ Contact Information (email, WhatsApp)
+  ✅ Social Links (LinkedIn, GitHub, resume)
+  ✅ Projects (replace with your actual projects)
+  ✅ Skills (add/remove as needed)
+  ✅ Education & Experience
+
+📸 STEP 3: ADD YOUR IMAGES
+- Place images in: public/img/
+- profilepic.webp (your profile picture)
+- project1.jpg, project2.jpg, etc. (project screenshots)
+- preview.png (homepage screenshot for social sharing)
+
+📧 STEP 4: SETUP CONTACT FORM
+- Go to: https://web3forms.com/
+- Get your free access key
+- Update: contactInfo.web3formsAccessKey in data.ts
+
+🚀 STEP 5: DEPLOY
+- Deploy to Vercel, Netlify, or your preferred platform
+
+✨ THAT'S IT! Your portfolio is ready!
+
+💡 TIP: All components automatically use data from data.ts - no need to edit individual component files!
+
+
+📝 USAGE TERMS
+===========================================
+
+You're free to:
+
+- Use this template for your personal or commercial portfolio.
+- Edit and customize the code as much as you like.
+
+Please don't:
+
+- Resell or share the original or modified code without my permission.
+- Use this template as a base for products meant to be sold or distributed.
+
+Disclaimer: This template is provided as-is. I've tested it thoroughly, but I'm not responsible for any issues that may arise if you modify the source code. If you encounter any problems during setup or customization, feel free to reach out — I'll do my best to help! 😊
+
+Feel free to reach out if you have any questions or run into issues! 😊
