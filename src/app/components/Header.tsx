@@ -4,6 +4,7 @@ import React, { RefObject } from "react";
 import { navbarData } from "../data/data";
 import { motion } from "motion/react";
 import { liVariants, tooltipVariants } from "../data/variants";
+
 interface HeaderProps {
   sectionRefs: Record<string, RefObject<HTMLElement | null>>;
 }
@@ -53,7 +54,7 @@ const Header: React.FC<HeaderProps> = ({ sectionRefs }) => {
                   damping: 10,
                 }}
                 onClick={() =>
-                  handleScroll(item.name.toLowerCase(), item.type, item.url)
+                  handleScroll(item.name.toLowerCase(), item.type as "link" | "scroll", item.url)
                 }
               >
                 <motion.span>

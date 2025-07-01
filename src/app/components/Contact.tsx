@@ -13,73 +13,15 @@ import {
 
 const Contact = React.forwardRef<HTMLElement, unknown>((_, ref) => {
   const [status, setStatus] = useState<string | null>(null);
-  const [emailError, setEmailError] = useState("");
-  const [messageError, setMessageError] = useState("");
-  const [loading, setLoading] = useState(false);
-
-  function validateEmail(email: string): boolean {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  }
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    if (loading) return;
-    const form = e.target as HTMLFormElement;
-    const email = form.email.value;
-    const message = form.message.value;
-
-    if (!validateEmail(email)) {
-      setEmailError("Please enter a valid email address.");
-      setTimeout(() => {
-        setEmailError("");
-      }, 4000);
-      return;
-    } else {
-      setEmailError("");
-    }
-    if (message.trim().length < 10) {
-      setMessageError("Please enter atleast 10 characters.");
-      setTimeout(() => {
-        setMessageError("");
-      }, 4000);
-      return;
-    } else {
-      setMessageError("");
-    }
-
-    const formData = {
-      access_key: contactInfo.web3formsAccessKey,
-      email,
-      message,
-    };
-
-    try {
-      setLoading(true);
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const result = await response.json();
-      if (result.success) {
-        setStatus("Message sent successfully!");
-        form.reset();
-      } else {
-        setStatus("Error sending message. Please try again.");
-      }
-    } catch {
-      setStatus("Something went wrong. Please try again.");
-    } finally {
-      setLoading(false);
-    }
+    // Form is disabled because no Web3Forms access key is set
+    setStatus('Contact form is disabled. No access key provided.');
     setTimeout(() => {
       setStatus(null);
     }, 4000);
+    return;
   }
 
   return (
@@ -157,8 +99,8 @@ const Contact = React.forwardRef<HTMLElement, unknown>((_, ref) => {
               placeholder="Your Email"
               className="w-full px-4 py-3 border placeholder:text-sm bg-neutral-900 border-neutral-600 rounded-lg focus:outline-none"
               required
+              disabled
             />
-            {emailError && <p className="text-red-500 text-xs">{emailError}</p>}
           </motion.div>
           <motion.div
             variants={fadeInUpLarge}
@@ -171,10 +113,8 @@ const Contact = React.forwardRef<HTMLElement, unknown>((_, ref) => {
               rows={5}
               className="w-full px-4 py-3 border placeholder:text-sm bg-neutral-900 border-neutral-600 rounded-lg focus:outline-none resize-none"
               required
+              disabled
             />
-            {messageError && (
-              <p className="text-red-500 text-xs">{messageError}</p>
-            )}
           </motion.div>
           <motion.button
             type="submit"
@@ -182,9 +122,10 @@ const Contact = React.forwardRef<HTMLElement, unknown>((_, ref) => {
             initial="hidden"
             whileInView="visible"
             whileHover={{ scale: 1.01 }}
-            className="w-full bg-neutral-950 cursor-pointer px-4 py-2 rounded-lg text-sm font-medium border border-neutral-600 flex justify-center"
+            className="w-full bg-neutral-950 cursor-not-allowed px-4 py-2 rounded-lg text-sm font-medium border border-neutral-600 flex justify-center opacity-60"
+            disabled
           >
-            {loading ? "Sending..." : "Send Message"}
+            Contact form disabled
           </motion.button>
         </motion.form>
 
@@ -200,3 +141,5 @@ const Contact = React.forwardRef<HTMLElement, unknown>((_, ref) => {
 
 Contact.displayName = "Contact";
 export default Contact;
+
+

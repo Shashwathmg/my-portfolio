@@ -6,33 +6,9 @@
 // This is the ONLY file you need to edit to customize your entire portfolio!
 
 import { FiHome, FiMail } from "react-icons/fi";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaHtml5, FaCss3Alt, FaJs, FaGit, FaFigma, FaReact, FaNodeJs, FaDatabase, FaWordpress, FaCogs, FaRobot } from "react-icons/fa";
 import { TbUserSquare } from "react-icons/tb";
-import { FaReact, FaNodeJs, FaDatabase, FaServer } from "react-icons/fa";
-import {
-  SiTailwindcss,
-  SiExpress,
-  SiRedux,
-  SiSocketdotio,
-  SiFirebase,
-  SiMongodb,
-} from "react-icons/si";
-
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaGit,
-  FaFigma,
-  FaCuttlefish,
-} from "react-icons/fa";
-import {
-  SiTypescript,
-  SiNextdotjs,
-  SiFramer,
-  SiPostman,
-  SiVercel,
-} from "react-icons/si";
+import { SiTailwindcss, SiExpress, SiTypescript, SiNextdotjs, SiFramer, SiPostman, SiVercel } from "react-icons/si";
 import { LuSquareCode } from "react-icons/lu";
 import { IoLogoGithub } from "react-icons/io";
 
@@ -40,50 +16,38 @@ import { IoLogoGithub } from "react-icons/io";
 // 👤 PERSONAL INFORMATION
 // =================================================================
 export const personalInfo = {
-  // Basic Information
-  name: "John Doe", // Your full name
-  title: "Full Stack Developer", // Your professional title
-  tagline: "Crafting Beautiful & Functional Web Experiences", // Hero section tagline
+  name: "Shashwathagowda M",
+  title: "Web Developer",
+  tagline: "Building Scalable & User-Centric Web Applications",
   description:
-    "Hey, I'm John Doe, a Full Stack Developer passionate about building performant, user-friendly, and scalable applications.", // Hero section description
-
-  // Profile
-  profileImage: "/img/profilepic.webp", // Your profile picture
-  profileImageAlt: "John Doe Profile Picture", // Alt text for profile image
+    "Hey, I'm Shashwathagowda M, a Web Developer with 3+ years of experience crafting high-performance and SEO-friendly applications using modern web technologies.",
+  profileImage: "/img/profilepic.webp",
+  profileImageAlt: "Shashwathagowda M Profile Picture",
   summary:
-    "I'm a passionate Full-Stack Developer who enjoys building and exploring new technologies. Always learning and creating innovative solutions.", // About section summary
-  location: "New York, USA", // Your location
-
-  // Professional Details
-  availability: "Available for new projects", // Current availability status
-  experience: "3+ years of experience", // Years of experience
-
-  // Additional Info for SEO
+    "I'm a passionate Web Developer who thrives on turning ideas into responsive, efficient, and visually appealing digital solutions. Always pushing the boundaries of technology.",
+  location: "India",
+  availability: "Available for new opportunities",
+  experience: "3+ years of experience",
   keywords: [
-    "John Doe", // Your name
-    "Full Stack Developer",
-    "React",
-    "Next.js",
-    "Portfolio",
+    "Shashwathagowda M",
     "Web Developer",
-    "TypeScript",
-    "JavaScript",
-  ],
+    "React.js",
+    "Next.js",
+    "Node.js",
+    "WordPress",
+    "SEO Developer",
+    "JavaScript Developer"
+  ]
 };
 
 // =================================================================
 // 🌐 WEBSITE & SEO CONFIGURATION
 // =================================================================
 export const siteConfig = {
-  // Website URLs
-  siteUrl: "https://yourdomain.com", // Your deployed website URL
-  siteName: "John Doe Portfolio", // Site name for social sharing
-
-  // SEO Description
+  siteUrl: "https://shashwathagowda.dev",
+  siteName: "Shashwathagowda Portfolio",
   seoDescription:
-    "Building scalable and performant web applications with modern technologies.",
-
-  // Social Preview Image (Take a screenshot of your homepage and save as "preview.png" in public/img/)
+    "Creating SEO-optimized, scalable, and user-friendly applications with React, Next.js, Node.js, and WordPress.",
   previewImage: "/img/preview.png",
 };
 
@@ -91,24 +55,18 @@ export const siteConfig = {
 // 📧 CONTACT INFORMATION
 // =================================================================
 export const contactInfo = {
-  email: "john.doe@email.com", // Your email address
-  whatsappNumber: "1234567890", // Your WhatsApp number (without + sign)
-  whatsappMessage: "Hi! I'm interested in working with you. Can we chat?", // Default WhatsApp message
-
-  // Web3Forms Access Key (Get it free from https://web3forms.com/)
-  // Step 1: Go to https://web3forms.com/
-  // Step 2: Click "Create your Access Key" and generate your free access key
-  // Step 3: Copy and paste it below
-  web3formsAccessKey: "YOUR_ACCESS_KEY", // Replace with your actual Web3Forms access key
+  email: "shashwatha.dev@gmail.com",
+  whatsappNumber: "8073553283",
+  whatsappMessage: "Hi! I came across your portfolio and would love to connect."
 };
 
 // =================================================================
 // 🔗 SOCIAL LINKS
 // =================================================================
 export const socialLinks = {
-  linkedin: "https://linkedin.com/in/johndoe", // Your LinkedIn profile URL
-  github: "https://github.com/johndoe", // Your GitHub profile URL
-  resumeLink: "https://drive.google.com/file/d/YOUR_RESUME_ID/view", // Google Drive link to your resume
+  linkedin: "https://linkedin.com/in/shashwathagowda",
+  github: "https://github.com/shashwathagowda",
+  resumeLink: "https://drive.google.com/file/d/YOUR_RESUME_ID/view",
 };
 
 // =================================================================
@@ -125,28 +83,18 @@ export const skills = [
   { name: "Framer Motion", icon: SiFramer, color: "#0055FF" },
   { name: "NodeJS", icon: FaNodeJs, color: "#83CD29" },
   { name: "ExpressJS", icon: SiExpress, color: "#C9D1D9" },
-  { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
-  { name: "Redux Toolkit", icon: SiRedux, color: "#764ABC" },
   { name: "Git", icon: FaGit, color: "#F05032" },
   { name: "GitHub", icon: FaGithub, color: "#ffffff" },
   { name: "Vercel", icon: SiVercel, color: "#ffffff" },
   { name: "Postman", icon: SiPostman, color: "#FF6C37" },
-  { name: "C++", icon: FaCuttlefish, color: "#00599C" },
   { name: "Figma", icon: FaFigma, color: "#F24E1E" },
+  { name: "WordPress", icon: FaWordpress, color: "#21759b" },
 ];
 
 // =================================================================
 // 🧭 NAVIGATION CONFIGURATION
 // =================================================================
-type NavbarItem = {
-  name: string;
-  type: "scroll" | "link";
-  icon: React.ElementType;
-  size: string;
-  url?: string;
-};
-
-export const navbarData: NavbarItem[] = [
+export const navbarData = [
   { name: "Home", type: "scroll", icon: FiHome, size: "18px" },
   { name: "About", type: "scroll", icon: TbUserSquare, size: "18px" },
   { name: "Projects", type: "scroll", icon: LuSquareCode, size: "18px" },
@@ -156,15 +104,15 @@ export const navbarData: NavbarItem[] = [
     type: "link",
     icon: FaLinkedinIn,
     url: socialLinks.linkedin,
-    size: "18px",
+    size: "18px"
   },
   {
     name: "Github",
     type: "link",
     icon: IoLogoGithub,
     url: socialLinks.github,
-    size: "18px",
-  },
+    size: "18px"
+  }
 ];
 
 // =================================================================
@@ -172,112 +120,91 @@ export const navbarData: NavbarItem[] = [
 // =================================================================
 export const projects = [
   {
-    name: "Sample Project 1",
-    description: "Description about sample project 1",
+    name: "HR Management Software",
+    description: "Comprehensive internal platform to streamline employee operations.",
     points: [
-      "Feature 1 of the sample project.",
-      "Feature 2 of the sample project.",
-      "Feature 3 of the sample project.",
+      "Employee onboarding and profile management",
+      "Task creation, tracking, and department-wise updates",
+      "Leave request workflows and balance tracking",
+      "Real-time attendance with clock-in/clock-out",
+      "Company-wide calendar integration"
     ],
     techStack: [
       { name: "React.js", icon: FaReact, color: "#61DAFB" },
-      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#38B2AC" },
       { name: "Node.js", icon: FaNodeJs, color: "#83CD29" },
       { name: "Express.js", icon: SiExpress, color: "#C9D1D9" },
+      { name: "MySQL", icon: FaDatabase, color: "#00618A" }
     ],
     liveLink: "#",
     githubLink: "#",
-    image: "/img/projectimage.jfif", // Update with the actual project image
+    image: "/img/hrms.png"
   },
   {
-    name: "Sample Project 2",
-    description: "Description about sample project 2",
+    name: "B2C E-commerce Website",
+    description: "Full-featured SEO-friendly platform for a fresh meat delivery brand.",
     points: [
-      "Feature 1 of the sample project.",
-      "Feature 2 of the sample project.",
-      "Feature 3 of the sample project.",
+      "Product catalog with advanced filtering",
+      "Cart and checkout with secure session handling",
+      "Admin dashboard for order/inventory management",
+      "Next.js SSR for SEO on product/landing pages"
     ],
     techStack: [
-      { name: "React.js", icon: FaReact, color: "#61DAFB" },
-      { name: "Redux Toolkit", icon: SiRedux, color: "#764ABC" },
-      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#38B2AC" },
-      { name: "Socket.IO", icon: SiSocketdotio, color: "#ffffff" },
+      { name: "Next.js", icon: SiNextdotjs, color: "#ffffff" },
       { name: "Node.js", icon: FaNodeJs, color: "#83CD29" },
       { name: "Express.js", icon: SiExpress, color: "#C9D1D9" },
-      { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+      { name: "MySQL", icon: FaDatabase, color: "#00618A" }
     ],
     liveLink: "#",
     githubLink: "#",
-    image: "/img/projectimage.jfif", // Update with the actual project image
+    image: "/img/ecommerce.png"
   },
   {
-    name: "Sample Project 3",
-    description: "Description about sample project 3",
+    name: "Geo-Analysis Tool with AI",
+    description: "Prototype tool for geographic data analysis using AI and automation.",
     points: [
-      "Feature 1 of the sample project.",
-      "Feature 2 of the sample project.",
-      "Feature 3 of the sample project.",
+      "AI integration to analyze location-based data",
+      "Automated data extraction workflows via n8n",
+      "Custom dashboards for real-time geo insights"
     ],
     techStack: [
-      { name: "React.js", icon: FaReact, color: "#61DAFB" },
-      { name: "Redux Toolkit", icon: SiRedux, color: "#764ABC" },
-      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#38B2AC" },
-      { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
+      { name: "JavaScript", icon: FaJs, color: "#F7DF1E" },
+      { name: "n8n", icon: FaCogs, color: "#00DC82" },
+      { name: "AI APIs", icon: FaRobot, color: "#8250DF" }
     ],
     liveLink: "#",
     githubLink: "#",
-    image: "/img/projectimage.jfif", // Update with the actual project image
-  },
-  {
-    name: "Sample Project 4",
-    description: "Description about sample project 4",
-    points: [
-      "Feature 1 of the sample project.",
-      "Feature 2 of the sample project.",
-      "Feature 3 of the sample project.",
-    ],
-    techStack: [
-      { name: "React.js", icon: FaReact, color: "#61DAFB" },
-      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#38B2AC" },
-      { name: "Context API", icon: FaServer, color: "#6366F1" },
-      { name: "OpenWeather API", icon: FaDatabase, color: "#0064a5" },
-    ],
-    liveLink: "#",
-    githubLink: "#",
-    image: "/img/projectimage.jfif", // Update with the actual project image
-  },
+    image: "/img/geoai.png"
+  }
 ];
 
 // =================================================================
 // 🎓 EDUCATION INFORMATION
 // =================================================================
 export const education = {
-  institution: "University of Technology",
-  degree: "Master of Computer Applications",
-  cgpa: "8.5",
+  institution: "Your University Name",
+  degree: "Bachelor of Computer Applications",
+  cgpa: "8.2",
   duration: "2020 - 2023",
-  location: "New York, USA",
+  location: "India",
 };
 
 // =================================================================
 // 💼 WORK EXPERIENCE
 // =================================================================
 export const experience = {
-  companyName: "TechCorp Solutions",
-  position: "Frontend Developer Intern",
-  duration: "Jan 2023 - July 2023",
+  companyName: "Company 2",
+  position: "Web Developer",
+  duration: "[Start – End]",
   location: "Remote",
   achievements: [
-    "Developed a key feature that improved user engagement by 40%",
-    "Collaborated with cross-functional teams to enhance UI/UX design",
-    "Fixed critical bugs and optimized performance, reducing load time by 25%",
-    "Mentored junior developers and contributed to code review processes",
-  ],
+    "Developed SSR-ready React/Next.js web apps with SEO features",
+    "Created backend APIs using Node.js/Express.js",
+    "Built responsive layouts across devices",
+    "Used Git & Azure DevOps in Agile/Scrum workflows"
+  ]
 };
 
 // =================================================================
 // 📝 ADDITIONAL CONFIGURATION
 // =================================================================
-
-// Copyright year (automatically uses current year)
 export const currentYear = new Date().getFullYear();
